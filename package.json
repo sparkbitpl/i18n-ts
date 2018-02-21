@@ -1,0 +1,42 @@
+{
+  "name": "i18n-ts",
+  "version": "1.0.0",
+  "description": "Type safe internationalization utility for TypeScript",
+  "main": "./lib/i18n.js",
+  "types": "./dts/i18n.d.ts",
+  "scripts": {
+    "build": "npm run test && gulp build",
+    "test": "jasmine-ts \"test/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparkbitpl/i18n-ts.git"
+  },
+  "keywords": [
+    "i18n",
+    "TypeScript",
+    "internationalization"
+  ],
+  "author": "Sparkbit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sparkbitpl/i18n-ts/issues"
+  },
+  "homepage": "https://github.com/sparkbitpl/i18n-ts#readme",
+  "dependencies": {
+    "typescript": "2.7.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "del": "3.0.0",
+    "gulp": "3.9.1",
+    "gulp-if": "2.0.2",
+    "gulp-sourcemaps": "2.6.4",
+    "gulp-typescript": "3.2.4",
+    "jasmine": "^2.9.0",
+    "jasmine-ts": "^0.2.1",
+    "path": "0.12.7",
+    "run-sequence": "2.2.1",
+    "yargs": "11.0.0"
+  }
+}

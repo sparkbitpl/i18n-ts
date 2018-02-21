@@ -1,0 +1,1 @@
+export type I18n<P> = {[lang: string]: P} & {default: P};
