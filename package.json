@@ -23,20 +23,19 @@
     "url": "https://github.com/sparkbitpl/i18n-ts/issues"
   },
   "homepage": "https://github.com/sparkbitpl/i18n-ts#readme",
-  "dependencies": {
-    "typescript": "2.7.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/jasmine": "^2.8.6",
+    "@types/jasmine": "^2.8.16",
     "del": "3.0.0",
     "gulp": "3.9.1",
     "gulp-if": "2.0.2",
     "gulp-sourcemaps": "2.6.4",
     "gulp-typescript": "3.2.4",
-    "jasmine": "^2.9.0",
-    "jasmine-ts": "^0.2.1",
+    "jasmine": "2.9.0",
+    "jasmine-ts": "0.2.1",
     "path": "0.12.7",
     "run-sequence": "2.2.1",
+    "typescript": "2.9.2",
     "yargs": "11.0.0"
   }
 }
