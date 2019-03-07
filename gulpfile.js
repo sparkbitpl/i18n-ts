@@ -1,7 +1,6 @@
 const del = require("del");
 const gulp = require("gulp");
 const path = require("path");
-const runSequence = require("run-sequence");
 const sourcemaps = require("gulp-sourcemaps");
 const gulpif = require('gulp-if');
 const ts = require("gulp-typescript");
@@ -37,5 +36,4 @@ gulp.task("generate-dts", () => {
     return tsResult.dts.pipe(gulp.dest("dts"));
 });
 
-gulp.task("build", (cb) =>
-    runSequence("clean", "transpile-ts", "generate-dts", cb));
+gulp.task("build", gulp.series("clean", "transpile-ts", "generate-dts"));
