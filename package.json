@@ -1,6 +1,6 @@
 {
   "name": "i18n-ts",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Type safe internationalization utility for TypeScript",
   "main": "./lib/i18n.js",
   "types": "./dts/i18n.d.ts",
