@@ -37,12 +37,12 @@ export class I18nResolver<P> {
         if (!isCookieAvailable) {
             return null;
         }
-        let cookie: string = document.cookie
+        let cookie: string[] = document.cookie
             .split(";")
             .map(cookieStr => cookieStr.trim())
-            .find(cookieStr => cookieStr.startsWith(name + "="));
+            .filter(cookieStr => cookieStr.match(name + "=.*"));
 
-        return cookie ? cookie.replace(name + "=", "") : null;
+        return cookie.length > 0 ? cookie[0].replace(name + "=", "") : null;
     }
 
     private getBrowserLanguage(): string {
